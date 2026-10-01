@@ -926,7 +926,7 @@ if (ownerForm) {
 */
 
 const WHATSAPP_NUMBER =
-  '22900000000';
+  '2290196320368';
 
 
 const whatsappBtn =
