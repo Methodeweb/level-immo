@@ -4,20 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="LEVEL-IMMO Construction — Achat, vente, location, gestion immobilière et construction BTP au Bénin.">
+
 <title>LEVEL-IMMO Construction | Immobilier & BTP au Bénin</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header class="header">
   <div class="container nav">
+
     <a href="#accueil" class="logo">
-      <img src="level-immo-logo.png" alt="LEVEL-IMMO Construction">
+      <img src="logo level-immo.png" alt="LEVEL-IMMO Construction">
       <span>LEVEL-IMMO <small>CONSTRUCTION</small></span>
     </a>
+
     <button class="menu" aria-label="Ouvrir le menu">☰</button>
+
     <nav id="nav">
       <a href="#accueil">Accueil</a>
       <a href="#biens">Biens</a>
@@ -27,42 +35,90 @@
       <a href="#apropos">À propos</a>
       <a href="#contact" class="nav-btn">Contact</a>
     </nav>
+
   </div>
 </header>
 
+
 <main>
+
+<!-- =========================
+     HERO
+========================= -->
+
 <section id="accueil" class="hero">
+
   <div class="hero-bg"></div>
+
   <div class="container hero-inner">
+
     <div class="hero-copy">
-      <span class="eyebrow">IMMOBILIER • CONSTRUCTION • GESTION</span>
-      <h1>Construisons ensemble<br><em>votre patrimoine.</em></h1>
-      <p>LEVEL-IMMO accompagne particuliers, propriétaires, investisseurs et entreprises dans leurs projets immobiliers au Bénin.</p>
+
+      <span class="eyebrow">
+        IMMOBILIER • CONSTRUCTION • GESTION
+      </span>
+
+      <h1>
+        Construisons ensemble<br>
+        <em>votre patrimoine.</em>
+      </h1>
+
+      <p>
+        LEVEL-IMMO accompagne particuliers, propriétaires,
+        investisseurs et entreprises dans leurs projets
+        immobiliers au Bénin.
+      </p>
+
       <div class="actions">
-        <a class="btn primary" href="#biens">Explorer les biens</a>
-        <a class="btn outline" href="#contact">Parler à un conseiller</a>
+        <a class="btn primary" href="#biens">
+          Explorer les biens
+        </a>
+
+        <a class="btn outline" href="#contact">
+          Parler à un conseiller
+        </a>
       </div>
+
       <div class="trust">
         <span>✓ Achat & vente</span>
         <span>✓ Location</span>
         <span>✓ Construction BTP</span>
       </div>
+
     </div>
 
+
     <div class="search-box">
+
       <div class="search-head">
-        <div><b>Trouvez votre bien</b><span>Parcelle, maison, appartement ou local</span></div>
+
+        <div>
+          <b>Trouvez votre bien</b>
+          <span>Parcelle, maison, appartement ou local</span>
+        </div>
+
         <span class="live">● INVENTAIRE</span>
+
       </div>
+
+
       <div class="search-grid">
-        <label>Je recherche
+
+        <label>
+          Je recherche
+
           <select id="heroStatus">
             <option value="">Tous</option>
             <option value="vente">À acheter</option>
             <option value="location">À louer</option>
           </select>
+
         </label>
-        <label>Type
+
+
+        <label>
+          Type
+
           <select id="heroType">
             <option value="">Tous les biens</option>
             <option value="parcelle">Parcelle</option>
@@ -70,8 +126,13 @@
             <option value="appartement">Appartement</option>
             <option value="local">Local commercial</option>
           </select>
+
         </label>
-        <label>Zone
+
+
+        <label>
+          Zone
+
           <select id="heroZone">
             <option value="">Toutes les zones</option>
             <option>Cotonou</option>
@@ -80,253 +141,1083 @@
             <option>Comé</option>
             <option>Ouidah</option>
           </select>
+
         </label>
+
       </div>
-      <button class="btn dark full" id="heroSearch">Rechercher un bien →</button>
+
+
+      <button class="btn dark full" id="heroSearch">
+        Rechercher un bien →
+      </button>
+
+
       <div class="quick">
+
         <button data-q="vente">À vendre</button>
         <button data-q="location">À louer</button>
         <button data-q="parcelle">Parcelles</button>
         <button data-q="maison">Maisons</button>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     STATISTIQUES
+========================= -->
 
 <section class="stats">
+
   <div class="container stats-grid">
-    <div><strong>01</strong><span>ACHAT & VENTE</span><small>Biens immobiliers</small></div>
-    <div><strong>02</strong><span>LOCATION</span><small>Habitation & professionnel</small></div>
-    <div><strong>03</strong><span>CONSTRUCTION</span><small>BTP & rénovation</small></div>
-    <div><strong>04</strong><span>GESTION</span><small>Administration de biens</small></div>
+
+    <div>
+      <strong>01</strong>
+      <span>ACHAT & VENTE</span>
+      <small>Biens immobiliers</small>
+    </div>
+
+    <div>
+      <strong>02</strong>
+      <span>LOCATION</span>
+      <small>Habitation & professionnel</small>
+    </div>
+
+    <div>
+      <strong>03</strong>
+      <span>CONSTRUCTION</span>
+      <small>BTP & rénovation</small>
+    </div>
+
+    <div>
+      <strong>04</strong>
+      <span>GESTION</span>
+      <small>Administration de biens</small>
+    </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     INVENTAIRE
+========================= -->
 
 <section id="biens" class="section">
+
   <div class="container">
+
     <div class="section-head">
+
       <div>
-        <span class="eyebrow dark">INVENTAIRE IMMOBILIER</span>
-        <h2>Les opportunités du moment</h2>
-        <p>Un inventaire organisé pour retrouver rapidement les biens disponibles et leur état.</p>
+
+        <span class="eyebrow dark">
+          INVENTAIRE IMMOBILIER
+        </span>
+
+        <h2>
+          Les opportunités du moment
+        </h2>
+
+        <p>
+          Un inventaire organisé pour retrouver rapidement
+          les biens disponibles et leur état.
+        </p>
+
       </div>
+
+
       <div class="head-actions">
-        <button class="ghost-dark" id="favOnly">♡ Mes favoris <span id="favCount">0</span></button>
-        <button class="ghost-dark" id="resetFilters">Réinitialiser</button>
+
+        <button class="ghost-dark" id="favOnly">
+          ♡ Mes favoris
+          <span id="favCount">0</span>
+        </button>
+
+        <button class="ghost-dark" id="resetFilters">
+          Réinitialiser
+        </button>
+
       </div>
+
     </div>
+
 
     <div class="filterbar">
-      <input id="keyword" placeholder="🔎  Rechercher par titre, zone, référence...">
+
+      <input
+        id="keyword"
+        placeholder="🔎  Rechercher par titre, zone, référence..."
+      >
+
+
       <select id="filterType">
+
         <option value="">Type</option>
-        <option value="parcelle">Parcelle</option>
-        <option value="maison">Maison</option>
-        <option value="appartement">Appartement</option>
-        <option value="local">Local commercial</option>
+
+        <option value="parcelle">
+          Parcelle
+        </option>
+
+        <option value="maison">
+          Maison
+        </option>
+
+        <option value="appartement">
+          Appartement
+        </option>
+
+        <option value="local">
+          Local commercial
+        </option>
+
       </select>
+
+
       <select id="filterStatus">
-        <option value="">Transaction</option>
-        <option value="vente">À vendre</option>
-        <option value="location">À louer</option>
+
+        <option value="">
+          Transaction
+        </option>
+
+        <option value="vente">
+          À vendre
+        </option>
+
+        <option value="location">
+          À louer
+        </option>
+
       </select>
+
+
       <select id="filterState">
-        <option value="">État</option>
-        <option>Neuf</option>
-        <option>Bon état</option>
-        <option>À rénover</option>
-        <option>Terrain nu</option>
+
+        <option value="">
+          État
+        </option>
+
+        <option>
+          Neuf
+        </option>
+
+        <option>
+          Bon état
+        </option>
+
+        <option>
+          À rénover
+        </option>
+
+        <option>
+          Terrain nu
+        </option>
+
       </select>
+
+
       <select id="filterZone">
-        <option value="">Zone</option>
-        <option>Cotonou</option>
-        <option>Abomey-Calavi</option>
-        <option>Porto-Novo</option>
-        <option>Comé</option>
-        <option>Ouidah</option>
+
+        <option value="">
+          Zone
+        </option>
+
+        <option>
+          Cotonou
+        </option>
+
+        <option>
+          Abomey-Calavi
+        </option>
+
+        <option>
+          Porto-Novo
+        </option>
+
+        <option>
+          Comé
+        </option>
+
+        <option>
+          Ouidah
+        </option>
+
       </select>
+
     </div>
+
 
     <div class="result-line">
+
       <span id="resultCount"></span>
-      <span>Les informations sont à confirmer auprès de LEVEL-IMMO avant toute transaction.</span>
+
+      <span>
+        Les informations sont à confirmer auprès de
+        LEVEL-IMMO avant toute transaction.
+      </span>
+
     </div>
+
+
     <div id="propertyGrid" class="property-grid"></div>
-    <div id="empty" class="empty hidden">Aucun bien ne correspond à votre recherche.</div>
+
+
+    <div id="empty" class="empty hidden">
+      Aucun bien ne correspond à votre recherche.
+    </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section id="services" class="section soft">
+
   <div class="container">
+
     <div class="center-head">
-      <span class="eyebrow dark">NOS SERVICES</span>
-      <h2>Un seul partenaire pour plusieurs étapes.</h2>
-      <p>LEVEL-IMMO réunit les services nécessaires à la recherche, la transaction, la construction et la gestion de votre patrimoine.</p>
+
+      <span class="eyebrow dark">
+        NOS SERVICES
+      </span>
+
+      <h2>
+        Un seul partenaire pour plusieurs étapes.
+      </h2>
+
+      <p>
+        LEVEL-IMMO réunit les services nécessaires à la recherche,
+        la transaction, la construction et la gestion de votre patrimoine.
+      </p>
+
     </div>
+
+
     <div class="services">
-      <article><i>⌂</i><h3>Achat immobilier</h3><p>Recherche de parcelles, maisons, appartements et locaux selon votre cahier des charges.</p><a href="#contact">Exprimer mon besoin →</a></article>
-      <article><i>↗</i><h3>Vente de biens</h3><p>Présentation et commercialisation de vos biens auprès d'acquéreurs potentiels.</p><a href="#contact">Vendre mon bien →</a></article>
-      <article><i>▣</i><h3>Location & gestion</h3><p>Mise en location, suivi administratif et accompagnement bailleurs-locataires.</p><a href="#location">En savoir plus →</a></article>
-      <article><i>▦</i><h3>Construction BTP</h3><p>Construction, rénovation, aménagement et coordination de projets immobiliers.</p><a href="#construction">Mon projet BTP →</a></article>
-      <article><i>✓</i><h3>Conseil immobilier</h3><p>Orientation, analyse du besoin et accompagnement des étapes du projet.</p><a href="#contact">Être accompagné →</a></article>
-      <article><i>◇</i><h3>Gestion de patrimoine</h3><p>Solutions d'administration et de valorisation adaptées aux propriétaires.</p><a href="#contact">Nous consulter →</a></article>
+
+      <article>
+
+        <i>⌂</i>
+
+        <h3>
+          Achat immobilier
+        </h3>
+
+        <p>
+          Recherche de parcelles, maisons, appartements
+          et locaux selon votre cahier des charges.
+        </p>
+
+        <a href="#contact">
+          Exprimer mon besoin →
+        </a>
+
+      </article>
+
+
+      <article>
+
+        <i>↗</i>
+
+        <h3>
+          Vente de biens
+        </h3>
+
+        <p>
+          Présentation et commercialisation de vos biens
+          auprès d'acquéreurs potentiels.
+        </p>
+
+        <a href="#contact">
+          Vendre mon bien →
+        </a>
+
+      </article>
+
+
+      <article>
+
+        <i>▣</i>
+
+        <h3>
+          Location & gestion
+        </h3>
+
+        <p>
+          Mise en location, suivi administratif
+          et accompagnement bailleurs-locataires.
+        </p>
+
+        <a href="#location">
+          En savoir plus →
+        </a>
+
+      </article>
+
+
+      <article>
+
+        <i>▦</i>
+
+        <h3>
+          Construction BTP
+        </h3>
+
+        <p>
+          Construction, rénovation, aménagement
+          et coordination de projets immobiliers.
+        </p>
+
+        <a href="#construction">
+          Mon projet BTP →
+        </a>
+
+      </article>
+
+
+      <article>
+
+        <i>✓</i>
+
+        <h3>
+          Conseil immobilier
+        </h3>
+
+        <p>
+          Orientation, analyse du besoin et accompagnement
+          des étapes du projet.
+        </p>
+
+        <a href="#contact">
+          Être accompagné →
+        </a>
+
+      </article>
+
+
+      <article>
+
+        <i>◇</i>
+
+        <h3>
+          Gestion de patrimoine
+        </h3>
+
+        <p>
+          Solutions d'administration et de valorisation
+          adaptées aux propriétaires.
+        </p>
+
+        <a href="#contact">
+          Nous consulter →
+        </a>
+
+      </article>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     CONSTRUCTION BTP
+========================= -->
 
 <section id="construction" class="split">
+
   <div class="split-img"></div>
+
+
   <div class="split-content">
-    <span class="eyebrow dark">LEVEL-IMMO CONSTRUCTION</span>
-    <h2>Du terrain au bâtiment.</h2>
-    <p>Nous pouvons accompagner votre projet immobilier depuis la recherche du foncier jusqu'aux travaux de construction ou de rénovation, avec les intervenants adaptés au projet.</p>
+
+    <span class="eyebrow dark">
+      LEVEL-IMMO CONSTRUCTION
+    </span>
+
+    <h2>
+      Du terrain au bâtiment.
+    </h2>
+
+    <p>
+      Nous pouvons accompagner votre projet immobilier
+      depuis la recherche du foncier jusqu'aux travaux
+      de construction ou de rénovation, avec les intervenants
+      adaptés au projet.
+    </p>
+
+
     <div class="steps">
-      <div><b>01</b><span>Définir le besoin</span></div>
-      <div><b>02</b><span>Étudier le projet</span></div>
-      <div><b>03</b><span>Planifier les travaux</span></div>
-      <div><b>04</b><span>Suivre & livrer</span></div>
+
+      <div>
+        <b>01</b>
+        <span>Définir le besoin</span>
+      </div>
+
+      <div>
+        <b>02</b>
+        <span>Étudier le projet</span>
+      </div>
+
+      <div>
+        <b>03</b>
+        <span>Planifier les travaux</span>
+      </div>
+
+      <div>
+        <b>04</b>
+        <span>Suivre & livrer</span>
+      </div>
+
     </div>
-    <a class="btn dark" href="#contact">Demander une étude BTP</a>
+
+
+    <a class="btn dark" href="#contact">
+      Demander une étude BTP
+    </a>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     LOCATION
+========================= -->
 
 <section id="location" class="section">
+
   <div class="container rental">
+
     <div>
-      <span class="eyebrow dark">LOCATION & ADMINISTRATION</span>
-      <h2>Des services locatifs pensés pour les propriétaires et locataires.</h2>
-      <p>LEVEL-IMMO propose des prestations de gestion et d'administration de biens et met à disposition une documentation contractuelle pour encadrer les relations locatives.</p>
+
+      <span class="eyebrow dark">
+        LOCATION & ADMINISTRATION
+      </span>
+
+      <h2>
+        Des services locatifs pensés
+        pour les propriétaires et locataires.
+      </h2>
+
+      <p>
+        LEVEL-IMMO propose des prestations de gestion
+        et d'administration de biens et met à disposition
+        une documentation contractuelle pour encadrer
+        les relations locatives.
+      </p>
+
+
       <div class="rental-list">
-        <span><b>01</b> Recherche de locataire</span>
-        <span><b>02</b> Mise en location</span>
-        <span><b>03</b> Suivi administratif</span>
-        <span><b>04</b> Administration du bien</span>
+
+        <span>
+          <b>01</b>
+          Recherche de locataire
+        </span>
+
+        <span>
+          <b>02</b>
+          Mise en location
+        </span>
+
+        <span>
+          <b>03</b>
+          Suivi administratif
+        </span>
+
+        <span>
+          <b>04</b>
+          Administration du bien
+        </span>
+
       </div>
+
     </div>
+
+
     <div class="legal-card">
-      <span>DOCUMENTATION</span>
-      <h3>Contrat de location</h3>
-      <p>Consultez l'introduction du modèle de contrat fourni par LEVEL-IMMO.</p>
-      <button class="link-btn" id="openContract">Lire l'introduction →</button>
+
+      <span>
+        DOCUMENTATION
+      </span>
+
+      <h3>
+        Contrat de location
+      </h3>
+
+      <p>
+        Consultez l'introduction du modèle de contrat
+        fourni par LEVEL-IMMO.
+      </p>
+
+      <button class="link-btn" id="openContract">
+        Lire l'introduction →
+      </button>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     À PROPOS
+========================= -->
 
 <section id="apropos" class="section soft">
+
   <div class="container about">
+
     <div>
-      <span class="eyebrow dark">À PROPOS</span>
-      <h2>LEVEL-IMMO Construction</h2>
-      <p class="lead">Une entreprise immobilière orientée vers l'achat, la vente, la location, la gestion et la construction au Bénin.</p>
+
+      <span class="eyebrow dark">
+        À PROPOS
+      </span>
+
+      <h2>
+        LEVEL-IMMO Construction
+      </h2>
+
+      <p class="lead">
+        Une entreprise immobilière orientée vers l'achat,
+        la vente, la location, la gestion et la construction
+        au Bénin.
+      </p>
+
     </div>
+
+
     <div>
-      <p>Notre ambition est de simplifier le parcours immobilier en rapprochant les propriétaires, acquéreurs, locataires et porteurs de projets de services adaptés.</p>
-      <div class="values"><span>Transparence</span><span>Proximité</span><span>Suivi</span><span>Professionnalisme</span></div>
-      <div class="owner-box">
-        <b>Vous êtes propriétaire ?</b>
-        <span>Déposez votre bien dans notre inventaire et laissez notre équipe vous recontacter.</span>
-        <button class="btn primary" id="ownerBtn">Déposer un bien</button>
+
+      <p>
+        Notre ambition est de simplifier le parcours immobilier
+        en rapprochant les propriétaires, acquéreurs, locataires
+        et porteurs de projets de services adaptés.
+      </p>
+
+
+      <div class="values">
+
+        <span>
+          Transparence
+        </span>
+
+        <span>
+          Proximité
+        </span>
+
+        <span>
+          Suivi
+        </span>
+
+        <span>
+          Professionnalisme
+        </span>
+
       </div>
+
+
+      <div class="owner-box">
+
+        <b>
+          Vous êtes propriétaire ?
+        </b>
+
+        <span>
+          Déposez votre bien dans notre inventaire
+          et laissez notre équipe vous recontacter.
+        </span>
+
+        <button class="btn primary" id="ownerBtn">
+          Déposer un bien
+        </button>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact" class="contact">
+
   <div class="container contact-grid">
+
     <div>
-      <span class="eyebrow">CONTACT</span>
-      <h2>Votre projet commence par une conversation.</h2>
-      <p>Expliquez-nous votre besoin : acheter, vendre, louer, construire ou faire gérer un bien.</p>
+
+      <span class="eyebrow">
+        CONTACT
+      </span>
+
+      <h2>
+        Votre projet commence
+        par une conversation.
+      </h2>
+
+      <p>
+        Expliquez-nous votre besoin :
+        acheter, vendre, louer, construire
+        ou faire gérer un bien.
+      </p>
+
+
       <div class="contact-details">
-        <p>📍 République du Bénin</p>
-        <p>📞 <span id="phoneDisplay">+229 XX XX XX XX</span></p>
-        <p>✉️ contact@levelimmo.bj</p>
+
+        <p>
+          📍 République du Bénin
+        </p>
+
+        <p>
+          📞
+          <span id="phoneDisplay">
+            +229 XX XX XX XX
+          </span>
+        </p>
+
+        <p>
+          ✉️ contact@levelimmo.bj
+        </p>
+
       </div>
-      <a class="whatsapp" id="whatsappBtn" href="#">WhatsApp →</a>
+
+
+      <a class="whatsapp" id="whatsappBtn" href="#">
+        WhatsApp →
+      </a>
+
     </div>
+
 
     <form id="contactForm">
-      <label>Nom et prénom<input required name="name" placeholder="Votre nom"></label>
-      <label>Téléphone<input required name="phone" placeholder="+229 ..."></label>
-      <label>Objet
-        <select name="need">
-          <option>Achat d'un bien</option>
-          <option>Vente d'un bien</option>
-          <option>Location</option>
-          <option>Construction BTP</option>
-          <option>Gestion immobilière</option>
-          <option>Dépôt d'un bien</option>
-          <option>Autre</option>
-        </select>
+
+      <label>
+        Nom et prénom
+
+        <input
+          required
+          name="name"
+          placeholder="Votre nom"
+        >
+
       </label>
-      <label>Message<textarea required name="message" rows="5" placeholder="Décrivez votre projet..."></textarea></label>
-      <button class="btn primary full">Envoyer ma demande</button>
+
+
+      <label>
+        Téléphone
+
+        <input
+          required
+          name="phone"
+          placeholder="+229 ..."
+        >
+
+      </label>
+
+
+      <label>
+        Objet
+
+        <select name="need">
+
+          <option>
+            Achat d'un bien
+          </option>
+
+          <option>
+            Vente d'un bien
+          </option>
+
+          <option>
+            Location
+          </option>
+
+          <option>
+            Construction BTP
+          </option>
+
+          <option>
+            Gestion immobilière
+          </option>
+
+          <option>
+            Dépôt d'un bien
+          </option>
+
+          <option>
+            Autre
+          </option>
+
+        </select>
+
+      </label>
+
+
+      <label>
+        Message
+
+        <textarea
+          required
+          name="message"
+          rows="5"
+          placeholder="Décrivez votre projet..."
+        ></textarea>
+
+      </label>
+
+
+      <button class="btn primary full">
+        Envoyer ma demande
+      </button>
+
       <small id="formMsg"></small>
+
     </form>
+
   </div>
+
 </section>
+
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
+
   <div class="container footer">
+
     <div>
-      <img src="level-immo-logo.png" alt="LEVEL-IMMO" class="footer-logo">
-      <p>Immobilier • Construction • Gestion<br>République du Bénin</p>
+
+      <img
+        src="logo level-immo.png"
+        alt="LEVEL-IMMO"
+        class="footer-logo"
+      >
+
+      <p>
+        Immobilier • Construction • Gestion<br>
+        République du Bénin
+      </p>
+
     </div>
-    <div><h4>Explorer</h4><a href="#biens">Biens disponibles</a><a href="#services">Nos services</a><a href="#construction">Construction BTP</a></div>
-    <div><h4>Immobilier</h4><a href="#biens">Parcelles</a><a href="#biens">Maisons</a><a href="#location">Location</a></div>
-    <div><h4>Contact</h4><p>+229 XX XX XX XX</p><p>contact@levelimmo.bj</p></div>
+
+
+    <div>
+
+      <h4>
+        Explorer
+      </h4>
+
+      <a href="#biens">
+        Biens disponibles
+      </a>
+
+      <a href="#services">
+        Nos services
+      </a>
+
+      <a href="#construction">
+        Construction BTP
+      </a>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        Immobilier
+      </h4>
+
+      <a href="#biens">
+        Parcelles
+      </a>
+
+      <a href="#biens">
+        Maisons
+      </a>
+
+      <a href="#location">
+        Location
+      </a>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        Contact
+      </h4>
+
+      <p>
+        +229 XX XX XX XX
+      </p>
+
+      <p>
+        contact@levelimmo.bj
+      </p>
+
+    </div>
+
   </div>
-  <div class="container copyright">© <span id="year"></span> LEVEL-IMMO Construction. Tous droits réservés.</div>
+
+
+  <div class="container copyright">
+
+    © <span id="year"></span>
+    LEVEL-IMMO Construction.
+    Tous droits réservés.
+
+  </div>
+
 </footer>
 
+
+<!-- =========================
+     MODAL BIEN
+========================= -->
+
 <div class="modal" id="propertyModal">
-  <div class="modal-box"><button class="close">×</button><div id="propertyDetail"></div></div>
+
+  <div class="modal-box">
+
+    <button class="close">
+      ×
+    </button>
+
+    <div id="propertyDetail"></div>
+
+  </div>
+
 </div>
+
+
+<!-- =========================
+     MODAL CONTRAT
+========================= -->
 
 <div class="modal" id="contractModal">
+
   <div class="modal-box legal">
-    <button class="close">×</button>
-    <span class="eyebrow dark">DOCUMENTATION</span>
-    <h2>Introduction du contrat de location</h2>
-    <p>Dans le cadre de ses activités de gestion et d'administration de biens immobiliers, l'agence <b>LEVEL IMMO</b>, dûment enregistrée et reconnue en République du Bénin, met à la disposition de ses clients un modèle de contrat de location conforme à la législation béninoise en vigueur.</p>
-    <p>Ce document encadre les relations entre le bailleur (ou son mandataire, l'agence LEVEL IMMO) et le locataire, afin d'assurer une occupation paisible et réglementée des lieux loués.</p>
-    <p>Il s'appuie principalement sur les textes suivants :</p>
+
+    <button class="close">
+      ×
+    </button>
+
+    <span class="eyebrow dark">
+      DOCUMENTATION
+    </span>
+
+    <h2>
+      Introduction du contrat de location
+    </h2>
+
+
+    <p>
+      Dans le cadre de ses activités de gestion et
+      d'administration de biens immobiliers, l'agence
+      <b>LEVEL IMMO</b>, dûment enregistrée et reconnue
+      en République du Bénin, met à la disposition de
+      ses clients un modèle de contrat de location
+      conforme à la législation béninoise en vigueur.
+    </p>
+
+
+    <p>
+      Ce document encadre les relations entre le bailleur
+      (ou son mandataire, l'agence LEVEL IMMO) et le locataire,
+      afin d'assurer une occupation paisible et réglementée
+      des lieux loués.
+    </p>
+
+
+    <p>
+      Il s'appuie principalement sur les textes suivants :
+    </p>
+
+
     <ul>
-      <li>La loi n°2018-12 du 2 juillet 2018 portant régime juridique du bail à usage d'habitation domestique et professionnel en République du Bénin ;</li>
-      <li>Les articles 1708 à 1762 du Code civil béninois, relatifs au louage des choses ;</li>
-      <li>Le cas échéant, les Actes Uniformes de l'OHADA pour les baux à usage commercial ou professionnel.</li>
+
+      <li>
+        La loi n°2018-12 du 2 juillet 2018 portant régime
+        juridique du bail à usage d'habitation domestique
+        et professionnel en République du Bénin ;
+      </li>
+
+      <li>
+        Les articles 1708 à 1762 du Code civil béninois,
+        relatifs au louage des choses ;
+      </li>
+
+      <li>
+        Le cas échéant, les Actes Uniformes de l'OHADA
+        pour les baux à usage commercial ou professionnel.
+      </li>
+
     </ul>
-    <p>LEVEL IMMO, en tant qu'intermédiaire agréé, agit dans le strict respect de ces textes et s'engage à défendre les intérêts légitimes du propriétaire tout en garantissant les droits du locataire.</p>
-    <div class="notice">Les références juridiques et le contenu contractuel doivent être vérifiés et, si nécessaire, actualisés par un professionnel du droit avant utilisation.</div>
+
+
+    <p>
+      LEVEL IMMO, en tant qu'intermédiaire agréé,
+      agit dans le strict respect de ces textes et
+      s'engage à défendre les intérêts légitimes du
+      propriétaire tout en garantissant les droits
+      du locataire.
+    </p>
+
+
+    <div class="notice">
+
+      Les références juridiques et le contenu contractuel
+      doivent être vérifiés et, si nécessaire, actualisés
+      par un professionnel du droit avant utilisation.
+
+    </div>
+
   </div>
+
 </div>
+
+
+<!-- =========================
+     MODAL PROPRIÉTAIRE
+========================= -->
 
 <div class="modal" id="ownerModal">
+
   <div class="modal-box">
-    <button class="close">×</button>
-    <span class="eyebrow dark">PROPRIÉTAIRE</span>
-    <h2>Déposer un bien</h2>
-    <p>Cette version permet de recueillir les informations du propriétaire. La connexion à une base de données/CRM pourra ensuite automatiser le traitement.</p>
+
+    <button class="close">
+      ×
+    </button>
+
+    <span class="eyebrow dark">
+      PROPRIÉTAIRE
+    </span>
+
+    <h2>
+      Déposer un bien
+    </h2>
+
+
+    <p>
+      Cette version permet de recueillir les informations
+      du propriétaire. La connexion à une base de données
+      ou à un CRM pourra ensuite automatiser le traitement.
+    </p>
+
+
     <form id="ownerForm">
-      <label>Nom<input required name="owner" placeholder="Nom et prénom"></label>
-      <label>Téléphone<input required name="phone" placeholder="+229 ..."></label>
-      <label>Type de bien
-        <select name="type">
-          <option>Parcelle</option>
-          <option>Maison</option>
-          <option>Appartement</option>
-          <option>Local commercial</option>
-        </select>
+
+      <label>
+        Nom
+
+        <input
+          required
+          name="owner"
+          placeholder="Nom et prénom"
+        >
+
       </label>
-      <label>Localisation<input required name="location" placeholder="Ville / arrondissement / quartier"></label>
-      <label>Informations<textarea name="info" rows="4" placeholder="Superficie, prix souhaité, état, documents disponibles..."></textarea></label>
-      <button class="btn primary full">Enregistrer la demande</button>
+
+
+      <label>
+        Téléphone
+
+        <input
+          required
+          name="phone"
+          placeholder="+229 ..."
+        >
+
+      </label>
+
+
+      <label>
+        Type de bien
+
+        <select name="type">
+
+          <option>
+            Parcelle
+          </option>
+
+          <option>
+            Maison
+          </option>
+
+          <option>
+            Appartement
+          </option>
+
+          <option>
+            Local commercial
+          </option>
+
+        </select>
+
+      </label>
+
+
+      <label>
+        Localisation
+
+        <input
+          required
+          name="location"
+          placeholder="Ville / arrondissement / quartier"
+        >
+
+      </label>
+
+
+      <label>
+        Informations
+
+        <textarea
+          name="info"
+          rows="4"
+          placeholder="Superficie, prix souhaité, état, documents disponibles..."
+        ></textarea>
+
+      </label>
+
+
+      <button class="btn primary full">
+        Enregistrer la demande
+      </button>
+
       <small id="ownerMsg"></small>
+
     </form>
+
   </div>
+
 </div>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>
